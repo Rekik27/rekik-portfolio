@@ -1,0 +1,66 @@
+/* Projects Page Styles */
+.projects {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 40px;
+  }
+  
+  .project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project h3 {
+    font-size: 1.6rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .project a {
+    color: #4caf50;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .project a:hover {
+    color: #007bff;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .projects {
+      padding: 20px;
+    }
+  
+    .project h3 {
+      font-size: 1.4rem;
+    }
+  }
+  

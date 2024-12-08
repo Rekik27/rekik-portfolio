@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box; /* Includes padding and borders in element size */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevents horizontal overflow */
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  header, footer {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px; /* Ensures content width is capped */
+    margin: 0 auto; /* Centers content horizontally */
+    padding: 0 20px; /* Adds space on the left and right */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
+  
+  
+  main {
+    padding: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

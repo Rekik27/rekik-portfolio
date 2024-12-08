@@ -1,0 +1,113 @@
+/* Global Styles */
+* {
+  box-sizing: border-box; /* Ensures padding and borders are included in element size */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6; /* Improves readability */
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+}
+
+/* Logo Styling */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Logo Animation */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header Styling */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh; /* Full height to cover the entire viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+/* Navigation Link Styling */
+.App-link {
+  color: #61dafb;
+}
+
+/* Header/Footer shared styling */
+header, footer {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px; /* Caps the width */
+  margin: 0 auto; /* Centers content */
+  padding: 0 20px; /* Adds left and right padding */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Main Content Area */
+main {
+  padding: 20px;
+}
+
+/* Keyframes for Logo Spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(12px + 3vmin); /* Adjust font size for mobile */
+    padding: 20px 10px;
+  }
+
+  header, footer {
+    padding: 10px 0; /* Reduce padding on smaller screens */
+  }
+
+  .container {
+    padding: 0 10px; /* Reduce container padding for smaller screens */
+  }
+
+  /* Adjust logo size for smaller screens */
+  .App-logo {
+    height: 30vmin;
+  }
+}

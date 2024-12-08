@@ -1,0 +1,80 @@
+/* Skills Page Container */
+.skills-page {
+  max-width: 1000px; /* Reduced max-width */
+  margin: 0 auto;
+  padding: 30px 20px; /* Reduced padding */
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.skills-page h1 {
+  font-size: 2rem; /* Reduced font size for the title */
+  margin-bottom: 20px;
+  color: #007bff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+/* Skills Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted the min width for better fit */
+  gap: 15px; /* Reduced gap between cards */
+  margin-top: 20px;
+}
+
+/* Skill Card Styling */
+.skill-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px; /* Reduced padding inside the cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 150px; /* Reduced card height */
+}
+
+.skill-card:hover {
+  transform: translateY(-4px); /* Slightly reduced hover lift */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+  background-color: #f1f1f1; /* Light background on hover */
+}
+
+.skill-card h2 {
+  font-size: 1.6rem; /* Reduced font size for skill name */
+  margin-bottom: 10px;
+  color: #4caf50;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.skill-card p {
+  font-size: 0.9rem; /* Reduced font size for skill level */
+  color: #666;
+  font-weight: 600;
+  margin-top: auto; /* Align the level text to the bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-page {
+    padding: 20px;
+  }
+
+  .skill-card h2 {
+    font-size: 1.4rem; /* Adjusted font size for mobile */
+  }
+
+  .skill-card p {
+    font-size: 0.8rem; /* Smaller font for mobile */
+  }
+
+  .skills-page h1 {
+    font-size: 1.8rem; /* Smaller heading for mobile */
+  }
+}
