@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/ContactPage.css';
 
-// Define TypeScript interfaces for form data and event types
 interface FormData {
   name: string;
   email: string;
@@ -9,13 +8,13 @@ interface FormData {
 }
 
 const ContactPage: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const [formData, setFormData] = useState<FormData>({ name: '', email: '', message: '' });
+  const [userTimeZone, setUserTimeZone] = useState<string | null>(null);
+  const [timeDifference, setTimeDifference] = useState<number | null>(null);
+  const [error, setError] = useState<string>('');
 
-  // Define the type for the event
+  const localTimeZone = 'America/Chicago';
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -23,10 +22,32 @@ const ContactPage: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form Data Submitted:', formData);
     alert('Thank you for your message!');
     setFormData({ name: '', email: '', message: '' });
   };
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        () => {
+          try {
+            const userZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            setUserTimeZone(userZone);
+            const localDate = new Date().toLocaleString('en-US', { timeZone: localTimeZone });
+            const visitorDate = new Date().toLocaleString('en-US', { timeZone: userZone });
+            const timeDiffInMs = Date.parse(visitorDate) - Date.parse(localDate);
+            const timeDiffInHours = timeDiffInMs / (1000 * 60 * 60);
+            setTimeDifference(timeDiffInHours);
+          } catch (error) {
+            setError('Unable to calculate time zone difference.');
+          }
+        },
+        () => setError('Unable to retrieve your location.')
+      );
+    } else {
+      setError('Geolocation is not supported by your browser.');
+    }
+  }, [localTimeZone]);
 
   return (
     <div className="contact-page">
@@ -66,6 +87,23 @@ const ContactPage: React.FC = () => {
         </div>
         <button type="submit">Send Message</button>
       </form>
+      <div className="time-zone-info">
+        <h3>Time Zone Information</h3>
+        {userTimeZone ? (
+          <>
+            <p>Your time zone: {userTimeZone}</p>
+            <p>
+              {timeDifference === 0
+                ? 'You are in the same time zone as me!'
+                : `You are ${Math.abs(timeDifference!)} hour(s) ${
+                    timeDifference! > 0 ? 'ahead of' : 'behind'
+                  } me.`}
+            </p>
+          </>
+        ) : (
+          <p>{error || 'Determining your time zone...'}</p>
+        )}
+      </div>
     </div>
   );
 };

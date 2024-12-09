@@ -1,95 +1,101 @@
 /* Global Styles */
 .about-page {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+  font-family: 'Roboto', sans-serif; /* More modern and readable font */
+  color: #333;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+  border-radius: 15px; /* Rounded corners for a softer look */
+  overflow: hidden;
+}
+
+/* Section Styles */
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #0056b3, #4caf50); /* Gradient using #0056b3 */
+  color: white;
+  padding: 50px 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Makes the heading stand out */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.bio, .aspirations {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #0056b3; /* Updated to match the theme */
+  margin-bottom: 10px;
+}
+
+h2:hover {
+  color: #4caf50; /* Hover effect to change color */
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Quote Section */
+.quote {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  font-style: italic;
+  color: #555;
+  border-left: 5px solid #0056b3; /* Updated to match the theme */
+}
+
+/* Quote Block */
+blockquote {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Animations */
+.hero h1 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
   }
-  
-  /* Section Styles */
-  .hero {
-    text-align: center;
-    background: linear-gradient(135deg, #007bff, #4caf50);
-    color: white;
-    padding: 50px 20px;
-    border-radius: 10px 10px 0 0;
+  100% {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-  
-  .bio, .aspirations {
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  h2 {
-    font-size: 1.8rem;
-    color: #007bff;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin-bottom: 10px;
-  }
-  
-  .quote {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    font-style: italic;
-    color: #555;
-    border-left: 5px solid #007bff;
-  }
-  
-  /* Quote Block */
-  blockquote {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    margin: 0;
-  }
-  
-  /* Animations */
-  .hero h1 {
-    animation: fadeIn 2s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-  
-  /* Hover Effects */
-  h2:hover {
-    color: #4caf50;
-    cursor: pointer;
-  }
-  
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    .hero h1 {
       font-size: 2rem;
-    }
-  
-    .hero p {
-      font-size: 1rem;
-    }
-  
-    h2 {
-      font-size: 1.5rem;
-    }
   }
-  
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+}

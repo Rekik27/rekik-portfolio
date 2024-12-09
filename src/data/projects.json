@@ -3,13 +3,13 @@
       "name": "Course Management System",
       "description": "A system for managing university courses, including enrollment and waitlisting.",
       "technologies": ["Java", "UML", "Object-Oriented Design"],
-      "github": "https://github.com/rekikmengstu/course-management"
+      "github": "https://github.com/Rekik27"
     },
     {
       "name": "Library Management System",
       "description": "A desktop app for managing library inventory, users, and book tracking.",
       "technologies": ["Java", "Swing", "MySQL"],
-      "github": "https://github.com/rekikmengstu/library-management"
+      "github": "https://github.com/Rekik27"
     }
   ]
   

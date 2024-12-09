@@ -1,33 +1,31 @@
-/* Footer Styles */
+/* Footer Styling */
 footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #0056b3; /* Updated to consistent color theme */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10; /* Ensure it stays above background elements */
+}
+
+/* Footer Links */
+footer a {
+  color: white; /* White color for footer links */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Responsive Footer Design */
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.9rem; /* Reduce font size for mobile screens */
   }
-  
-  footer p {
-    margin: 0;
-  }
-  
-  footer a {
-    color: #4caf50;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    footer {
-      font-size: 0.9rem;
-    }
-  }
-  
+}

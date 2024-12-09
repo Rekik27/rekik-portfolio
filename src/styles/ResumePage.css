@@ -5,12 +5,17 @@
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 h1 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 10px;
+    color: #0056b3; /* Updated to #0056b3 for consistency */
 }
 
 .contact-info {
@@ -20,7 +25,7 @@ h1 {
 }
 
 .contact-info a {
-    color: #007bff;
+    color: #0056b3; /* Updated to match the heading color */
     font-size: 0.9rem;
     text-decoration: none;
 }
@@ -35,8 +40,8 @@ h1 {
 
 .resume-section h2 {
     font-size: 1.5rem;
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+    color: #0056b3; /* Updated to #0056b3 */
+    border-bottom: 2px solid #0056b3;
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
@@ -54,8 +59,50 @@ h1 {
     margin: 5px 0;
 }
 
+/* Download Resume Button */
+.download-resume {
+    text-align: center;
+    margin-top: 40px; /* Increase spacing above the button */
+    margin-bottom: 80px; /* Add sufficient space above the footer */
+    z-index: 5; /* Ensure it stacks correctly */
+}
+
+.download-resume a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0056b3; /* Button background updated to match the theme */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px; /* Slightly rounded edges for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-resume a:hover {
+    background-color: #003f7f; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+.download-resume a:active {
+    transform: translateY(1px);
+}
+
+/* Add extra space below the resume page to prevent cutoff */
+.resume-page::after {
+    content: '';
+    display: block;
+    height: 20px; /* Extra space below */
+}
+
 @media (max-width: 768px) {
     .resume-page {
         padding: 10px;
+    }
+
+    .download-resume a {
+        font-size: 1rem;
+        padding: 10px 20px;
     }
 }
