@@ -1,8 +1,9 @@
 import React from 'react';
-import profileImage from '../assets/images/profile.jpg'; 
+import profileImage from '../assets/images/profile.jpg';  // Importing image
 import '../styles/HomePage.css';
 
-const HomePage = () => {
+// Define the functional component type as React.FC (no props needed here)
+const HomePage: React.FC = () => {
   return (
     <div className="home">
       <h2>Welcome to My Portfolio</h2>

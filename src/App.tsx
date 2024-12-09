@@ -10,7 +10,8 @@ import ResumePage from './components/ResumePage';
 import ContactPage from './components/ContactPage';
 import './App.css';
 
-const App = () => {
+// Since there are no props in the App component, we don't need to define props types
+const App: React.FC = () => {
   return (
     <Router>
       <div className="App">

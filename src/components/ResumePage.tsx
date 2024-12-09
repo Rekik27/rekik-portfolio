@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/ResumePage.css';
 
-const ResumePage = () => {
+// Define the functional component as a React.FC (Functional Component)
+const ResumePage: React.FC = () => {
   return (
     <div className="resume-page">
       <h1>Rekik Mengstu</h1>

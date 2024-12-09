@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
-const Header = () => {
+// Header component does not require props, so we can use React.FC
+const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="logo">

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "es2015"],
+    "jsx": "react-jsx", // if you're using React 17+
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,  // Enable JSON module resolution
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

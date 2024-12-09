@@ -2,11 +2,19 @@ import React from 'react';
 import '../styles/ProjectsPage.css';
 import projectsData from '../data/projects.json';
 
-const ProjectsPage = () => {
+// Define types for the project structure
+interface Project {
+  name: string;
+  description: string;
+  technologies: string[];
+  github: string;
+}
+
+const ProjectsPage: React.FC = () => {
   return (
     <div className="projects">
       <h2>My Projects</h2>
-      {projectsData.map((project) => (
+      {projectsData.map((project: Project) => (
         <div className="project" key={project.name}>
           <h3>{project.name}</h3>
           <p>{project.description}</p>
