@@ -10,6 +10,7 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
   border-radius: 15px; /* Rounded corners for a softer look */
   overflow: hidden;
+  padding-bottom: 150px; /* Added bottom padding to create space for the fixed footer */
 }
 
 /* Section Styles */
@@ -76,26 +77,31 @@ blockquote {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
-      transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 /* Responsiveness */
 @media (max-width: 768px) {
   .hero h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .hero p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  /* Adjust padding and space for smaller screens */
+  .about-page {
+    padding-bottom: 120px; /* Reduce padding for smaller screens */
   }
 }
