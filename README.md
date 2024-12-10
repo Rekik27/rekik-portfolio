@@ -1,50 +1,60 @@
 # Rekik Portfolio
 
 
-This project is a comprehensive web portfolio that showcases my skills, experience, and achievements as part of my CS 601 final project. The website is designed to demonstrate proficiency in web development technologies including HTML5, CSS3, JavaScript, TypeScript, React, and DOM manipulation. It features a responsive design, interactive components, and engaging content presentation.
+This project is a modern, responsive web portfolio built to showcase my skills, experience, and accomplishments as part of the CS 601 Term Project. The website leverages cutting-edge web development technologies, including HTML5, CSS3, JavaScript, TypeScript, React, and DOM manipulation, to create an engaging and professional online presence. It highlights responsive design, dynamic content, and interactive features.
 
 ## Features
+
 ### Homepage
- Has an introduction and a profile picture with interactive navigation menu linking to other pages
+Features a personalized introduction with a profile picture.
+Includes an interactive navigation menu linking to all major sections of the website.
 
 ### About me
- A biography section with details about my background, interests, and career goals.  and links to social media or professional networks.
-
-### Resume
- A Visual representations and downloadable version of my resume with highlights of skills, education, and professional experience.
+Provides a detailed biography, covering my background, interests, and career aspirations.
 
 ### Skills
- Visual representations of technical skills using grid layout.
+Displays technical and professional skills using a clean and organized grid layout.
+Highlights interactive hover effects and dynamic presentation.
 
 ### Projects
- Has details of the projects I have previously worked on.
+Details previous projects with descriptions, technologies used, and links to repositories.
+
+### Resume
+Offers a visual representation of my skills, education, and professional experience.
+Includes a downloadable PDF version of my resume for convenience.
 
 ### Contact
- A functional contact form to allow users to send messages and integrated HTML5 Geolocation to determine time zone gap with the user.
+A functional and user-friendly contact form for visitors to reach out.
+Integrates HTML5 Geolocation to calculate and display the time zone difference between me and the user, enhancing communication planning.
 
 ## Header and Footer
- The website has similar header with a navigation to different pages and a footer with copyright credential, linkdin and email links throughout all pages.
+Header: A consistent navigation bar across all pages for seamless browsing.
+Footer: Includes copyright information, quick links to LinkedIn, and email for professional outreach.
 
 
 ## Technologies Used
 
-Frontend: HTML5, CSS3, JSON, JavaScript, TypeScript, React.js
-Styling: Responsive design using CSS Grid and Flexbox
-Additional Tools: VS Code as the code editor
-Version Control: GitHub for collaboration and code management
-Web hosting: Netlify
+Frontend: HTML5, CSS3, JSON, JavaScript, TypeScript, React.js.
+Styling: Responsive design with CSS Grid and Flexbox for modern layouts.
+Development Tools: Visual Studio Code (VS Code) as the code editor.
+Version Control: GitHub for version tracking and collaboration.
+Hosting: Netlify for live deployment and accessibility.
 
-To Access my portfolio hosted in Netlify visit :
+
+## Live Demo
+Visit my portfolio hosted on Netlify at:
 ### https://rekik-mengstu.netlify.app/
 
 ##  To run Locally
 
 Clone the repository from GitHub:
-git clone https://github.com/Rekik27/rekik-portfolio
-Navigate to the project directory: cd rekik-portfolio
+### git clone https://github.com/Rekik27/rekik-portfolio
+Navigate to the project directory: 
+### cd rekik-portfolio
 Install dependencies: 
 ### `npm install`
 Start the development server: 
 ### `npm start`
-Open the application in your browser at http://localhost:3000/.
+Open the application in your browser at:
+### http://localhost:3000/.
 
