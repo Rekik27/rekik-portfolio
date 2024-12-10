@@ -34,11 +34,11 @@ Footer: Includes copyright information, quick links to LinkedIn, and email for p
 
 ## Technologies Used
 
-Frontend: HTML5, CSS3, JSON, JavaScript, TypeScript, React.js.
-Styling: Responsive design with CSS Grid and Flexbox for modern layouts.
-Development Tools: Visual Studio Code (VS Code) as the code editor.
-Version Control: GitHub for version tracking and collaboration.
-Hosting: Netlify for live deployment and accessibility.
+- **Frontend**: HTML5, CSS3, JSON, JavaScript, TypeScript, React.js.
+- **Styling**: Responsive design with CSS Grid and Flexbox for modern layouts.
+- **Development Tools**: Visual Studio Code (VS Code) as the code editor.
+- **Version Control**: GitHub for version tracking and collaboration.
+- **Hosting**: Netlify for live deployment and accessibility.
 
 
 ## Live Demo
