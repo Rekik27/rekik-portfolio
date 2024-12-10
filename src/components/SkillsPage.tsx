@@ -2,7 +2,7 @@ import React from 'react';
 import skills from '../data/skills.json';
 import '../styles/SkillsPage.css';
 
-// Define a type for the skill data structure
+// Defined a type for the skill data structure
 interface Skill {
   name: string;
   level: string;

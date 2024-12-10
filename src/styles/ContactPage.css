@@ -1,8 +1,10 @@
+/* Contact Page Styles */
+
 .contact-page {
   max-width: 900px;
   margin: 50px auto;
   padding: 40px 30px;
-  font-family: 'Roboto', sans-serif; /* Use a modern, clean font */
+  font-family: 'Roboto', sans-serif; 
   color: #444;
   background-color: #ffffff;
   border-radius: 15px;
@@ -11,9 +13,9 @@
 
 .contact-page h2 {
   text-align: center;
-  font-size: 2.8rem; /* Larger heading for better hierarchy */
+  font-size: 2.8rem; 
   margin-bottom: 30px;
-  color: #0056b3; /* Darker blue for a more professional look */
+  color: #0056b3;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -63,7 +65,7 @@ form button {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
-  background-color: #0056b3; /* Consistent with heading */
+  background-color: #0056b3; 
   border: none;
   border-radius: 8px;
   cursor: pointer;

@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/ProjectsPage.css';
 import projectsData from '../data/projects.json';
 
-// Define types for the project structure
+// Defined types for the project structure
 interface Project {
   name: string;
   description: string;

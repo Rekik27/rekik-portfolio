@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/ContactPage.css';
 
+// Defined a type for the FormData data structure
 interface FormData {
   name: string;
   email: string;
@@ -26,6 +27,7 @@ const ContactPage: React.FC = () => {
     setFormData({ name: '', email: '', message: '' });
   };
 
+  // Utilized HTML5 Geolocation 
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(

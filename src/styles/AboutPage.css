@@ -1,6 +1,7 @@
-/* Global Styles */
+/* About Page Styles */
+
 .about-page {
-  font-family: 'Roboto', sans-serif; /* More modern and readable font */
+  font-family: 'Roboto', sans-serif;
   color: #333;
   line-height: 1.6;
   max-width: 900px;
